@@ -1,3 +1,3 @@
-exports.test= function(){
-	console.log('first module');
-}
+'use strict';
+
+module.exports = require('./lib/yaag.js');
