@@ -1,7 +1,12 @@
 # yaag-nodejs
 
 under development
-[![NPM Version][npm-image]][npm-url]
+
+[npm-url]: https://npmjs.org/package/yaag-nodejs
+[downloads-image]: http://img.shields.io/npm/dm/yaag-nodejs.svg
+[npm-image]: http://img.shields.io/npm/v/yaag-nodejs.svg
+[travis-url]: https://travis-ci.org/akshaykumar12527/yaag-nodejs
+[travis-image]: http://img.shields.io/travis/akshaykumar12527/yaag-nodejs.svg
 
 ## Installation
 
