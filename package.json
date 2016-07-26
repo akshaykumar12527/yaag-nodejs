@@ -1,6 +1,6 @@
 {
   "name": "yaag-nodejs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A package for generate api documentation",
   "main": "index.js",
   "scripts": {
