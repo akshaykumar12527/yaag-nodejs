@@ -2,11 +2,7 @@
 
 under development
 
-[npm-url]: https://npmjs.org/package/yaag-nodejs
-[downloads-image]: http://img.shields.io/npm/dm/yaag-nodejs.svg
-[npm-image]: http://img.shields.io/npm/v/yaag-nodejs.svg
-[travis-url]: https://travis-ci.org/akshaykumar12527/yaag-nodejs
-[travis-image]: http://img.shields.io/travis/akshaykumar12527/yaag-nodejs.svg
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 ## Installation
 
@@ -29,3 +25,9 @@ app.use(docGenerator());
 ## Contributors 
 
 * Akshay Kumar (akshaykumar12527@gmail.com)
+
+[npm-url]: https://npmjs.org/package/yaag-nodejs
+[downloads-image]: http://img.shields.io/npm/dm/yaag-nodejs.svg
+[npm-image]: http://img.shields.io/npm/v/yaag-nodejs.svg
+[travis-url]: https://travis-ci.org/akshaykumar12527/yaag-nodejs
+[travis-image]: http://img.shields.io/travis/akshaykumar12527/yaag-nodejs.svg
