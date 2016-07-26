@@ -1,6 +1,7 @@
 # yaag-nodejs
 
 under development
+[![NPM Version][npm-image]][npm-url]
 
 ## Installation
 
