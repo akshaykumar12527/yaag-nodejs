@@ -26,6 +26,10 @@ app.use(docGenerator());
 
 * Akshay Kumar (akshaykumar12527@gmail.com)
 
+## License
+
+  [GNU](LICENSE)
+  
 [npm-url]: https://npmjs.org/package/yaag-nodejs
 [downloads-image]: http://img.shields.io/npm/dm/yaag-nodejs.svg
 [npm-image]: http://img.shields.io/npm/v/yaag-nodejs.svg
