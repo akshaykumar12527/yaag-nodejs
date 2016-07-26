@@ -19,7 +19,7 @@ app.use(docGenerator());
 ## Screenshots
 
 #### API doc is generated based on the paths
-![alt first](https://raw.github.com/betacraft/yaag/master/1.png)
+![alt first](https://raw.githubusercontent.com/akshaykumar12527/yaag-nodejs/master/1.png)
 
 ## Contributors 
 
