@@ -2,7 +2,7 @@
 
 under development
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Build status][appveyor-image]][appveyor-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 ## Installation
 
@@ -31,3 +31,7 @@ app.use(docGenerator());
 [npm-image]: http://img.shields.io/npm/v/yaag-nodejs.svg
 [travis-url]: https://travis-ci.org/akshaykumar12527/yaag-nodejs
 [travis-image]: http://img.shields.io/travis/akshaykumar12527/yaag-nodejs.svg
+[appveyor-image]:https://ci.appveyor.com/api/projects/status/bsu9w9ar8pboc2nj?svg=true
+[appveyor-url]:https://ci.appveyor.com/project/akshaykumar12527/yaag-nodejs
+[coveralls-url]:https://coveralls.io/r/akshaykumar12527/yaag-nodejs
+[coveralls-image]:https://coveralls.io/repos/akshaykumar12527/yaag-nodejs/badge.png
