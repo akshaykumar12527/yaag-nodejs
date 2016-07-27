@@ -5,4 +5,4 @@ node_js:
   - "5.11"
   - "0.6"
   - "iojs"
- script: bundle exec rake build && bundle exec rake builddoc
+  
