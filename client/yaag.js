@@ -1,44 +1,3 @@
-// var apidoc = {
-// 	"ApiSpecs": [{
-// 		"HttpVerb": "GET",
-// 		"Path": "/",
-// 		"Calls": [{
-// 			"Id": 0,
-// 			"CurrentPath": "/",
-// 			"MethodType": "GET",
-// 			"PostForm": null,
-// 			"RequestHeader": {
-// 				"Content-Type": " application/json\r"
-// 			},
-// 			"CommonRequestHeaders": null,
-// 			"ResponseHeader": {},
-// 			"RequestUrlParams": {},
-// 			"RequestBody": "",
-// 			"ResponseBody": "Hi there, I love !",
-// 			"ResponseCode": 200
-// 		}]
-// 	}, {
-// 		"HttpVerb": "POST",
-// 		"Path": "/say_it",
-// 		"Calls": [{
-// 			"Id": 1,
-// 			"CurrentPath": "/say_it",
-// 			"MethodType": "POST",
-// 			"PostForm": null,
-// 			"RequestHeader": {
-// 				"Content-Type": " application/json\r"
-// 			},
-// 			"CommonRequestHeaders": null,
-// 			"ResponseHeader": {
-// 				"Test": "tesasasdasd"
-// 			},
-// 			"RequestUrlParams": {},
-// 			"RequestBody": "",
-// 			"ResponseBody": "",
-// 			"ResponseCode": 200
-// 		}]
-// 	}]
-// };
 $.get("/apispecs.json", function(apidoc, status) {
 	var routes = document.getElementById('routes');
 	var payload = document.getElementById('payload');
@@ -58,8 +17,9 @@ $.get("/apispecs.json", function(apidoc, status) {
 			innerHTML += '<table class="table table-bordered table-striped">';
 			innerHTML += '<tr><th>Key</th><th>Value</th></tr>';
 			for (var key in apicall.RequestHeader) {
-				innerHTML += '<tr><td>' + key + '</td><td>  ' + apicall.RequestHeader[key] + '</td></tr></table>';
+				innerHTML += '<tr><td>' + key + '</td><td>  ' + apicall.RequestHeader[key] + '</td></tr>';
 			}
+			innerHTML += '</table>';
 			innerHTML += '<p><h4> Response Code</h4></p>';
 			innerHTML += '<pre class="prettyprint lang-json">' + apicall.ResponseCode + '</pre>';
 			if (Object.keys(apicall.ResponseHeader).length > 0) {
@@ -67,8 +27,9 @@ $.get("/apispecs.json", function(apidoc, status) {
 				innerHTML += '<table class="table table-bordered table-striped">';
 				innerHTML += '<tr><th>Key</th><th>Value</th></tr>';
 				for (var key in apicall.ResponseHeader) {
-					innerHTML += '<tr><td>' + key + '</td><td>  ' + apicall.ResponseHeader[key] + '</td></tr></table>';
+					innerHTML += '<tr><td>' + key + '</td><td>  ' + apicall.ResponseHeader[key] + '</td></tr>';
 				}
+				innerHTML += '</table>';
 			}
 			if (apicall.ResponseBody != "") {
 				innerHTML += '<p> <H4> Response Body </H4> </p>';
