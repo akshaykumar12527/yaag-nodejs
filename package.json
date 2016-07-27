@@ -4,7 +4,7 @@
   "description": "A package for generate api documentation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "./node_modules/.bin/_mocha test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/akshaykumar12527/yaag-nodejs/issues"
   },
-  "homepage": "https://github.com/akshaykumar12527/yaag-nodejs#readme"
+  "homepage": "https://github.com/akshaykumar12527/yaag-nodejs#readme",
+  "keywords": [
+    "apidocs",
+    "api docs",
+    "server apidocs"
+  ],
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "should": "^10.0.0"
+  }
 }
