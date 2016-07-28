@@ -20,6 +20,10 @@ $.get("/apispecs.json", function(apidoc, status) {
 				innerHTML += '<tr><td>' + key + '</td><td>  ' + apicall.RequestHeader[key] + '</td></tr>';
 			}
 			innerHTML += '</table>';
+			if (apicall.RequestBody || apicall.RequestBody != "") {
+				innerHTML += '<p> <H4> Request Body </H4> </p>';
+				innerHTML += '<pre class="prettyprint lang-json">' + apicall.RequestBody + '</pre><hr>';
+			}
 			innerHTML += '<p><h4> Response Code</h4></p>';
 			innerHTML += '<pre class="prettyprint lang-json">' + apicall.ResponseCode + '</pre>';
 			if (Object.keys(apicall.ResponseHeader).length > 0) {
