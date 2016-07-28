@@ -1,27 +1,5 @@
 {
-	"BaseUrls": {
-		"Production": "http://yaag-nodejs.com"
-	},
-	"DocTitle": "Yaag API",
-	"ApiSpecs": [{
-		"HttpVerb": "GET",
-		"Path": "/api/test",
-		"Calls": [{
-			"Id": 0,
-			"CurrentPath": "/api/test",
-			"MethodType": "GET",
-			"PostForm": null,
-			"RequestHeader": {
-				"host": "localhost:8080"
-			},
-			"CommonRequestHeaders": null,
-			"ResponseHeader": {
-				"Content-Type": "application/json; charset=utf-8"
-			},
-			"RequestUrlParams": {},
-			"RequestBody": "{}",
-			"ResponseBody": "{\"test\":false}",
-			"ResponseCode": 200
-		}]
-	}]
+	"BaseUrls": {},
+	"DocTitle": "",
+	"ApiSpecs": []
 }
