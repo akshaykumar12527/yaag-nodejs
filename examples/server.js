@@ -6,7 +6,15 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 app.use(bodyParser.json());
-app.use(docGenerator());
+// app.use(docGenerator());
+app.use(docGenerator({
+	on: true,
+	baseUrls: {
+		Production: 'http://yaag-nodejs.com'
+	},
+	docTitle: 'Yaag API',
+	docPath: '/yaagDocs'
+}));
 var router = express.Router();
 app.use('/api', router);
 router.route('/test')

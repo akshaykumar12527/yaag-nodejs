@@ -2,6 +2,7 @@ $.get("/apispecs.json", function(apidoc, status) {
 	var routes = document.getElementById('routes');
 	var payload = document.getElementById('payload');
 	var baseUrls = document.getElementById('baseUrls');
+	document.title = apidoc.DocTitle;
 	for (env in apidoc.BaseUrls) {
 		baseUrls.innerHTML = " <p>" + env + " : <strong>" + apidoc.BaseUrls[env] + "</strong></p></br>"
 	}
