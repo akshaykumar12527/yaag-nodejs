@@ -1,7 +1,10 @@
 $.get("/apispecs.json", function(apidoc, status) {
 	var routes = document.getElementById('routes');
 	var payload = document.getElementById('payload');
-
+	var baseUrls = document.getElementById('baseUrls');
+	for (env in apidoc.BaseUrls) {
+		baseUrls.innerHTML = " <p>" + env + " : <strong>" + apidoc.BaseUrls[env] + "</strong></p></br>"
+	}
 	apidoc.ApiSpecs.forEach(function(specs, index) {
 		var route = document.createElement('li');
 		route.setAttribute('role', 'presentation');
