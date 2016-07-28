@@ -12,15 +12,48 @@ $ npm install yaag-nodejs
 
 ## Usage
 
+####Use with default options
+
+```js
+var docGenerator = require('yaag-nodejs');
+var app = require('express')();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+app.use(bodyParser.json());
+app.use(docGenerator());
+```
+
+####Use with custom options
+
 ```js
 var docGenerator = require('yaag-nodejs');
 var app = require('express')();
 app.use(docGenerator());
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+app.use(bodyParser.json());
+app.use(docGenerator({
+	on: true,
+	baseUrls: {
+		Production: 'http://yaag-nodejs.com'
+	},
+	docTitle: 'Yaag API',
+	docPath: '/yaagDocs'
+}));
 ```
+
+
 ## Screenshots
 
-#### API doc is generated based on the paths
+#### API doc generated with default options
 ![alt first](https://raw.githubusercontent.com/akshaykumar12527/yaag-nodejs/master/1.png)
+
+#### API doc generated with custom options
+![alt first](https://raw.githubusercontent.com/akshaykumar12527/yaag-nodejs/master/2.png)
 
 ## Contributors 
 
