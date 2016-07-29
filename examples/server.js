@@ -24,7 +24,12 @@ router.route('/test')
 		});
 	});
 app.post('/test', function(req, res) {
-	res.send(200);
+	if (req.body.test == 10) {
+		res.send(200)
+	} else {
+		res.send(400);
+	}
+
 });
 app.listen(8080);
 console.log('server listening on 8080');
