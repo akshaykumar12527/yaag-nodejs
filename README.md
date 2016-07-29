@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/akshaykumar12527/yaag-nodejs/master/logo.png" alt="api doc generator for nodejs" width="255px" />
+<img src="https://raw.githubusercontent.com/akshaykumar12527/yaag-nodejs/master/logo.png" alt="api doc generator for nodejs" width="150px" />
 
 # yaag-nodejs
 
