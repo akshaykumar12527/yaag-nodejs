@@ -22,8 +22,8 @@ router.route('/test')
 		res.send({
 			'test': false
 		});
-	});
-app.post('/test', function(req, res) {
+	})
+   .post(function(req, res) {
 	if (req.body.test == 10) {
 		res.send(200)
 	} else {

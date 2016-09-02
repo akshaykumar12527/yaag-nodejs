@@ -23,6 +23,7 @@
     "server apidocs"
   ],
   "dependencies": {
+    "co-views": "^2.1.0",
     "content-type": "^1.0.2",
     "depd": "^1.1.0",
     "should": "^10.0.0"
