@@ -14,17 +14,19 @@ app.use(docGenerator());
 //     docPath: '/docs'
 // }));
 
-app.use(route.get('/test', function * (next) {
-    if ('GET' != this.method)
-        return yield next;
-    this.body = this;
+app.use(route.get('/test', function*(next) {
+	if ('GET' != this.method)
+		return yield next;
+	this.body = {
+		test: 'success'
+	};
 }));
-app.use(route.post('/test', function * (next) {
-     yield next;
-    this.body = 'request';
+app.use(route.post('/test', function*(next) {
+	yield next;
+	this.body = 'request';
 }));
 
 if (!module.parent) {
-    app.listen(8080);
-    console.log('listening on port 8080');
+	app.listen(8080);
+	console.log('listening on port 8080');
 }
